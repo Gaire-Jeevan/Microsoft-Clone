@@ -8,26 +8,30 @@
   </head>
   <body>
     <div class="navbar flex justify-between items-center p-4">
-      <div class="flex justify-center items-center">
-        <div class="hamburger inline-block p-4 cursor-pointer">
+      <div class="flex justify-center items-center md:order-2">
+        <div class="hamburger inline-block p-4 cursor-pointer md:hidden">
           <div class="line h-0.5 w-6 my-1 bg-black"></div>
           <div class="line h-0.5 w-6 my-1 bg-black"></div>
           <div class="line h-0.5 w-6 my-1 bg-black"></div>
         </div>
-        <div class="search">Search</div>
+        <div class="search md:hidden">Search</div>
       </div>
 
-      <div class="logo text-center md:order-1">
-        Microsoft
-        
+      <div class="logo text-center md:order-1 flex">
+        <div>Microsoft</div>
+        <div class="features absolute md:static w-fit md:w-auto bg-white md:bg-auto inset-0 md:flex md:mx-4 md:space-x-2  -translate-x-96 md:translate-x-0">
+          <div class="fitems">Microsoft 365</div>
+          <div class="fitems">Office</div>
+          <div class="fitems">Windows</div>
+          <div class="fitems">Surface</div>
+          <div class="fitems">Xbox</div>
+          <div class="fitems">Support</div>
+        </div>
       </div>
-      <div class="cart text-center">
-    
+      <div class="cart text-center md:order-3 flex">
+        <div class="search hidden md:block">All Microsoft Search</div>
         <div>Cart Account</div>
       </div>
     </div>
   </body>
 </html>
-
-
-
